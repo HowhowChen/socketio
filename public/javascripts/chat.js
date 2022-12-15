@@ -1,6 +1,6 @@
-const socket = io('ws://localhost:3000')
+const socket = io(`http://${window.location.hostname}:3000`)
 let myName = null
-
+console.log(window.location.hostname)
 const loginBtn = document.querySelector('.login-btn')
 const loginName = document.querySelector('#loginName')
 
